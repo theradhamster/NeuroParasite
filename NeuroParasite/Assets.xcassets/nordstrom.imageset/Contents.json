@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "nordstrom.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "106193539-15716752253023_nordstromnyc_lowerlevel1_womensshoesshoebar.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
