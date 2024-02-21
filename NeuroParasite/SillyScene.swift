@@ -26,6 +26,7 @@ class SillyScene: SKScene, SKPhysicsContactDelegate {
     var stone: SKSpriteNode!
     var weedStone: SKSpriteNode!
     var wagonCollision: SKSpriteNode!
+    var weedParticles: SKEmitterNode!
     
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "nordstrom.jpg")
@@ -116,6 +117,7 @@ class SillyScene: SKScene, SKPhysicsContactDelegate {
         if contact.bodyA.node == weedStone || contact.bodyB.node == weedStone {
             score += 3
             weedStone.removeFromParent()
+            weedParticles.removeFromParent()
         }
     }
     func createStones() {
@@ -125,11 +127,11 @@ class SillyScene: SKScene, SKPhysicsContactDelegate {
         stone.name = "stone"
         let xPostition = CGFloat.random(in: 40...350)
         let yPosition = CGFloat.random(in: 400...580)
-        stone.position = CGPoint(x: xPostition, y: yPosition + stone.size.height)
+        stone.position = CGPoint(x: xPostition, y: yPosition)
         stone.zPosition = 2
         addChild(stone)
-        stone.physicsBody?.velocity = CGVector(dx: 0, dy: -250)
-        stone.physicsBody?.angularVelocity = 2
+        stone.physicsBody?.velocity = CGVector(dx: 0, dy: -275)
+        stone.physicsBody?.angularVelocity = 2.3
         stone.physicsBody?.linearDamping = 0
         stone.physicsBody?.angularDamping = 0
     }
@@ -138,7 +140,7 @@ class SillyScene: SKScene, SKPhysicsContactDelegate {
                 self.createStones()
             }
 
-        let wait = SKAction.wait(forDuration: 1.5)
+        let wait = SKAction.wait(forDuration: 0.9)
             let sequence = SKAction.sequence([create, wait])
             let repeatForever = SKAction.repeatForever(sequence)
 
@@ -151,20 +153,30 @@ class SillyScene: SKScene, SKPhysicsContactDelegate {
         weedStone.name = "weedstone"
         let xPostition = CGFloat.random(in: 40...350)
         let yPosition = CGFloat.random(in: 400...580)
-        weedStone.position = CGPoint(x: xPostition, y: yPosition + weedStone.size.height)
+        weedStone.position = CGPoint(x: xPostition, y: yPosition)
         weedStone.zPosition = 2
+        weedParticles = SKEmitterNode(fileNamed: "magic")
+        weedParticles.position = weedStone.position
+        weedParticles.zPosition = 3
+        weedParticles.physicsBody = SKPhysicsBody(circleOfRadius: 50)
+        weedParticles.physicsBody?.isDynamic = false
         addChild(weedStone)
-        weedStone.physicsBody?.velocity = CGVector(dx: 0, dy: -50)
+        //addChild(weedParticles)
+        weedStone.physicsBody?.velocity = CGVector(dx: 0, dy: 100)
         weedStone.physicsBody?.angularVelocity = 1.5
-        weedStone.physicsBody?.linearDamping = 0
+        weedStone.physicsBody?.linearDamping = 2
         weedStone.physicsBody?.angularDamping = 0
+        weedParticles.physicsBody?.velocity = CGVector(dx: 0, dy: 100)
+        weedParticles.physicsBody?.angularVelocity = 1.5
+        weedParticles.physicsBody?.linearDamping = 0
+        weedParticles.physicsBody?.angularDamping = 0
     }
     func startWeedStones() {
         let create = SKAction.run { [unowned self] in
                 self.createWeedStones()
             }
 
-        let wait = SKAction.wait(forDuration: 4.5)
+        let wait = SKAction.wait(forDuration: 4.75)
             let sequence = SKAction.sequence([create, wait])
             let repeatForever = SKAction.repeatForever(sequence)
 

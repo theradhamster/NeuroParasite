@@ -11,12 +11,12 @@
 		3346B6F62B2C896B00337AE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346B6F52B2C896B00337AE7 /* ContentView.swift */; };
 		3346B6F82B2C896C00337AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3346B6F72B2C896C00337AE7 /* Assets.xcassets */; };
 		3346B6FB2B2C896C00337AE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3346B6FA2B2C896C00337AE7 /* Preview Assets.xcassets */; };
+		33AABF542B83B4DB009623DE /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 33AABF532B83B4DB009623DE /* magic.sks */; };
 		33CA4BF22B6BD370007A7998 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 33CA4BF12B6BD370007A7998 /* GameScene.sks */; };
 		33CA4BF42B6BD383007A7998 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA4BF32B6BD383007A7998 /* GameScene.swift */; };
 		33CA4BF62B6BE59B007A7998 /* SillyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA4BF52B6BE59B007A7998 /* SillyScene.swift */; };
 		33CA4BFA2B6BF1B4007A7998 /* SillyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA4BF92B6BF1B4007A7998 /* SillyView.swift */; };
 		33CA4BFC2B6BF224007A7998 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA4BFB2B6BF224007A7998 /* GameView.swift */; };
-		33CA4C0C2B6BF5C4007A7998 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 33CA4C0B2B6BF5C4007A7998 /* spark.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,12 +25,12 @@
 		3346B6F52B2C896B00337AE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3346B6F72B2C896C00337AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3346B6FA2B2C896C00337AE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33AABF532B83B4DB009623DE /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
 		33CA4BF12B6BD370007A7998 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		33CA4BF32B6BD383007A7998 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		33CA4BF52B6BE59B007A7998 /* SillyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SillyScene.swift; sourceTree = "<group>"; };
 		33CA4BF92B6BF1B4007A7998 /* SillyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SillyView.swift; sourceTree = "<group>"; };
 		33CA4BFB2B6BF224007A7998 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		33CA4C0B2B6BF5C4007A7998 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +66,10 @@
 				3346B6F32B2C896B00337AE7 /* NeuroParasiteApp.swift */,
 				3346B6F52B2C896B00337AE7 /* ContentView.swift */,
 				33CA4BF92B6BF1B4007A7998 /* SillyView.swift */,
+				33AABF532B83B4DB009623DE /* magic.sks */,
 				33CA4BFB2B6BF224007A7998 /* GameView.swift */,
 				33CA4BF12B6BD370007A7998 /* GameScene.sks */,
 				33CA4BF32B6BD383007A7998 /* GameScene.swift */,
-				33CA4C0B2B6BF5C4007A7998 /* spark.sks */,
 				33CA4BF52B6BE59B007A7998 /* SillyScene.swift */,
 				3346B6F72B2C896C00337AE7 /* Assets.xcassets */,
 				3346B6F92B2C896C00337AE7 /* Preview Content */,
@@ -144,8 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3346B6FB2B2C896C00337AE7 /* Preview Assets.xcassets in Resources */,
+				33AABF542B83B4DB009623DE /* magic.sks in Resources */,
 				33CA4BF22B6BD370007A7998 /* GameScene.sks in Resources */,
-				33CA4C0C2B6BF5C4007A7998 /* spark.sks in Resources */,
 				3346B6F82B2C896C00337AE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
